@@ -11,7 +11,7 @@ class Lockin < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/jeffnv/lockin/releases/download/v0.1.0/lockin_0.1.0_darwin_amd64.tar.gz"
-      sha256 "9102def21af7886d366d6ee9bb38c2d39a353ac40cbfa78eb39a21be577b2750"
+      sha256 "7182bb3e5fd5f63b80a66c9d7cc58322077b2744d240b41ebf6a482c7f9aa37b"
 
       define_method(:install) do
         bin.install "lockin"
@@ -19,7 +19,7 @@ class Lockin < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/jeffnv/lockin/releases/download/v0.1.0/lockin_0.1.0_darwin_arm64.tar.gz"
-      sha256 "0a514936e349c8bea4a14b3a31985a6d77209937fb619345392382ff507bcb50"
+      sha256 "5ea809b01a2c2c92a2c0c8961cb7d8d254185fd128aa0bc2b367db78edaecd29"
 
       define_method(:install) do
         bin.install "lockin"
@@ -30,14 +30,14 @@ class Lockin < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/jeffnv/lockin/releases/download/v0.1.0/lockin_0.1.0_linux_amd64.tar.gz"
-      sha256 "fdc98c2461ebd71df2633028cccb1dd7be6658cbf5f7cff050f6cdb46b8f224b"
+      sha256 "dfdb8cb835e7e4e621d5a5c38744fa4ccf8871f5555d1f95b6e777322d9874f2"
       define_method(:install) do
         bin.install "lockin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/jeffnv/lockin/releases/download/v0.1.0/lockin_0.1.0_linux_arm64.tar.gz"
-      sha256 "0a7ce6f43d90f819af0761ca82d9eae65f6dffa824445fa94a126ab9cc18f6bc"
+      sha256 "2a7e1585189f5299bfa2d4380d232ae8bc562e5626fe2f5d72b5b014824b07bf"
       define_method(:install) do
         bin.install "lockin"
       end
